@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          padding:0px;
+          margin:0px;
+        }
+        ol{
+            color: white;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            gap:10px
+        }
+        nav{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            background-color: black;
+            align-items:center;
+            padding:10px;
+            color: aliceblue;
+        }
+        h1{
+            color: white;
+        }
+        li{
+            font-size:1.2rem;
+            padding-left:10px;
+        }
+        video{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            object-fit:cover;
+            z-index: -1;
+        }
+        .text{
+            position: fixed;
+            top:250px;
+            left:20px;
+        }
+        p,h3{
+            color:white;
+            width: 900px;;
+        }
+        button{
+            margin-top:20px;
+            padding:10px;
+            border-radius:10px;
+            transition: all 0.3s;
+
+        }
+        button:hover{
+           letter-spacing:2px;
+           letter-spacing: 2px;
+           color: black;
+           background-color: aquamarine;
+        }
+        img{
+            border-radius: 2;
+            padding-left: 5px;
+            width: 30px;
+            height: 30px;
+        }
+        footer{
+            position: fixed;
+            left: 20px;
+            bottom: 10px;
+        }
+        li.hover{
+
+        }
+        video::-webkit-media-controls {
+    display: none !important;
+  }
+  img:hover
+  {
+    transform: translateY(-5px);
+  }
+  
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>AGGRESSION – VIRAT KOHLI</h1>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ol>
+    </nav>
+    <main>
+        <video src="summa1.mp4"  autoplay loop muted playsinline></video>
+    </main>
+    <div class="text">
+        <h1>UNSTOPPABLE FIERCE ENERGY</h1>
+        <h3>PASSIONATE WINNING SPIRIT</h3>
+        <br>
+        <p>Virat Kohli’s aggression is not just about intensity, but a powerful force that fuels his hunger to win and dominate the game. His fierce attitude on the field challenges opponents and inspires teammates, showing that passion with purpose can change the entire match. Whether he is chasing a target, motivating his team, or celebrating a boundary, his energy reflects determination and fearlessness. Kohli’s aggressive mindset teaches us that confidence, dedication, and an unbreakable spirit can transform pressure into victory and make greatness a habit.</p>
+        <button class="button">Explore</button>
+    </div>
+    <footer>
+        <ol>
+            <li><img src="logo-ig-stunning-instagram-logo-vector-download-for-new-7.webp"></li>
+            <li><img src="fb.jpg"></li>
+            <li><img src="wp.jpg"></li>
+        </ol>
+    </footer>
+</body>
+</html>

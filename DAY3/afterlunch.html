@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function demo1()
+           {
+            let name=document.getElementById("t1").value;
+            let b=document.getElementById("t2").value;
+            let x=parseInt(name);
+            let y=parseInt(b);
+            let z=x+y;
+            document.getElementById("t3").value=z;
+            
+           }
+            function demo2()
+           {
+            let name=document.getElementById("t1").value;
+            let b=document.getElementById("t2").value;
+            let x=parseInt(name);
+            let y=parseInt(b);
+            let z=x-y;
+            document.getElementById("t3").value=z;
+            
+           }
+           function demo3()
+           {
+            let name=document.getElementById("t1").value;
+            let b=document.getElementById("t2").value;
+            let x=parseInt(name);
+            let y=parseInt(b);
+            let z=x*y;
+            document.getElementById("t3").value=z;
+            
+           }
+           function demo4()
+           {
+            let name=document.getElementById("t1").value;
+            let b=document.getElementById("t2").value;
+            let x=parseInt(name);
+            let y=parseInt(b);
+            let z=x/y;
+            document.getElementById("t3").value=z;
+            
+           }
+    </script>
+    <style>
+        button
+        {
+            background-color: blue;
+
+        }h1
+        {
+            background-color:yellowgreen;
+            color: white;
+        }
+        fieldset 
+        {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h1>WELCOME TO OUR CALCULATOR WEBSITE</h1><br><br>
+    <tr>
+        <td>
+        <input type="number" placeholder="Enter the first number to add" id="t1">
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <input type="number" placeholder="Enter the second number to add" id="t2">
+    </td>
+    </tr>
+    <tr>
+        <td>
+    <label>Answer</label><input type="number" placeholder="Result" id="t3">
+    </td>
+    </tr>
+<tr>
+    <td>
+    <button onclick="demo1()">+</button>
+    <button onclick="demo2()">-</button>
+    </td>
+    </tr>
+    <tr>
+        <td>
+    <button onclick="demo3()">*</button>
+    <button onclick="demo4()">/</button>
+    </td>
+    </tr>
+    
+    </table>
+</body>
+</html>

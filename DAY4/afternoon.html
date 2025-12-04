@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form action="">
+        <p id="error" style="color: red;"></p>
+        <label>Username</label>
+        <input type="text" id="ip">
+        <label>Email</label>
+        <input type="email" id="e">
+        <button id="btn" type="submit">Submit</button>
+    </form>
+     <script>
+        let us=document.getElementById("ip")
+        let em=document.getElementById("e")
+        let sub =document.getElementById("btn")
+        let err=document.getElementById("error")
+        sub.addEventListener("click",(e)=>
+    {
+              e.preventDefault()
+              if(us.value=="" || em.value=="")
+              {
+                 err.innerHTML="Fields Cannot be Empty"
+              }
+              else
+              {
+                alert("Login Success Redirecting you to the website")
+                us.value=""
+                em.value=""
+                error.innerHTML=""
+              }
+    })  
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function press()
+        {
+            let boxvalue=document.getElementById("ip").value
+            let oll=document.getElementById("li")
+            let newlist=document.createElement("li")
+            newlist.innerText=boxvalue
+            oll.append(newlist)
+        }
+    </script>
+</head>
+<body>
+    <input type="text"id="ip">
+    <button id="btn" onclick="press()"> Click me </button>
+    <ol id="li"></ol>
+</body>
+</html>

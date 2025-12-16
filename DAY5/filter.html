@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <p id="te"></p>
+</body>
+<script>
+    let t=document.getElementById("t1")
+    let p=document.getElementById("te")
+ let employee=["Sachin Tendulkar","Virat Kohli","Rohit Sharma","MS Dhoni","Kapil Dev",
+"Sunil Gavaskar","Rahul Dravid","Sourav Ganguly","Yuvraj Singh","Jasprit Bumrah",
+"Ricky Ponting","Steve Smith","David Warner","Glenn McGrath","Shane Warne",
+"Adam Gilchrist","Brett Lee","Pat Cummins","Mitchell Starc","Marnus Labuschagne",
+"Kane Williamson","Ross Taylor","Trent Boult","Tim Southee","Martin Guptill",
+"Joe Root","Ben Stokes","Jos Buttler","James Anderson","Stuart Broad",
+"Jacques Kallis","AB de Villiers","Hashim Amla","Dale Steyn","Faf du Plessis",
+"Kumar Sangakkara","Mahela Jayawardene","Lasith Malinga","Sanath Jayasuriya","Muttiah Muralitharan",
+"Brian Lara","Chris Gayle","Curtly Ambrose","Courtney Walsh","Vivian Richards",
+"Babar Azam","Shaheen Afridi","Wasim Akram","Waqar Younis","Shahid Afridi",
+"Shakib Al Hasan","Tamim Iqbal","Mushfiqur Rahim","Mustafizur Rahman","Mashrafe Mortaza",
+"Rashid Khan","Mohammad Nabi","Rahmanullah Gurbaz","Naveen-ul-Haq","Hashmatullah Shahidi",
+"Kieron Pollard","Jason Holder","Andre Russell","Nicholas Pooran","Chris Gayle",
+"Brendon McCullum","Daniel Vettori","Kane Richardson","Aaron Finch","Usman Khawaja",
+"Shoaib Malik","Inzamam-ul-Haq","Imran Khan","Saqlain Mushtaq","Mohammad Amir",
+"Ravindra Jadeja","Ravichandran Ashwin","Shubman Gill","Hardik Pandya","KL Rahul",
+"Shaun Pollock","Graeme Smith","Herschelle Gibbs","AB de Villiers","Mark Boucher",
+"Shreyas Iyer","Ruturaj Gaikwad","Finn Allen","Rassie van der Dussen","Quinton de Kock",
+"Paul Stirling","Andy Balbirnie","George Dockrell","Tamim Iqbal","Litton Das"]
+t.addEventListener("keyup",()=>{
+let newEmp =employee.filter((emp)=>{
+            return emp.toLowerCase().includes(t.value.toLowerCase());
+})
+p.textContent=newEmp.join(", ")
+
+});
+
+</script>
+</html>

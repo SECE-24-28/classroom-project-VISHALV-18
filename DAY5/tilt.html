@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn" >Click here to fetch</button>
+    <div id="main"></div>
+
+<script>
+    function loaddata() {
+
+        let res =fetch("https://jsonplaceholder.typicode.com/users")
+        let data=res.json()
+        data.forEach((obj)=>
+    {
+           let pa=document.createElement("p");
+           pa.innerHTML=`${obj.name}-${obj.city}`
+           main.appendChild(pa);
+    })
+    }
+    btn.ad  
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let arr=[10,20,30]
+        let[a,b,c]=arr
+        console.log(a)
+                console.log(b)
+        console.log(c)
+
+    </script> -->
+    <!-- <script>
+        let stu={na:"Vishal",age:18}
+        let{na,age}=stu
+        console.log(na)
+        console.log(age)
+    </script>-->
+    <!-- <script>
+        console.log("One")
+        setTimeout(()=>
+    {
+        console.log("Two")
+    },2000);
+    console.log("Three")
+    </script> -->
+    <script>
+            // used to fetch data from a api 
+            //it uses promises for handling asynchronized tasks
+            //PROMISES HAS THREE STATES->PENDING,FULFILLED,REJECTED
+            //fetch returns only the state
+        let res=fetch("https://jsonplaceholder.typicode.com/users").then((data)=>
+    {
+        console.log(data)
+    })
+        console.log(data.json())
+    </script>
+</body>
+</html>
